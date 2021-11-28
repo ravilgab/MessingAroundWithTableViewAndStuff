@@ -12,6 +12,9 @@
 		F1F7A80D27528707004CFAED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F7A80B27528707004CFAED /* Main.storyboard */; };
 		F1F7A80F27528708004CFAED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F7A80E27528708004CFAED /* Assets.xcassets */; };
 		F1F7A81227528708004CFAED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F7A81027528708004CFAED /* LaunchScreen.storyboard */; };
+		F1F7A81A2752899A004CFAED /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7A8192752899A004CFAED /* MainTableViewController.swift */; };
+		F1F7A8202752C606004CFAED /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7A81F2752C606004CFAED /* CustomTableViewCell.swift */; };
+		F1F7A8232752D56C004CFAED /* CafeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7A8222752D56C004CFAED /* CafeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		F1F7A80E27528708004CFAED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1F7A81127528708004CFAED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1F7A81327528708004CFAED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1F7A8192752899A004CFAED /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		F1F7A81F2752C606004CFAED /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		F1F7A8222752D56C004CFAED /* CafeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,57 @@
 		F1F7A80427528707004CFAED /* MessingWithTableView */ = {
 			isa = PBXGroup;
 			children = (
-				F1F7A80527528707004CFAED /* AppDelegate.swift */,
-				F1F7A80727528707004CFAED /* SceneDelegate.swift */,
-				F1F7A80B27528707004CFAED /* Main.storyboard */,
-				F1F7A80E27528708004CFAED /* Assets.xcassets */,
-				F1F7A81027528708004CFAED /* LaunchScreen.storyboard */,
-				F1F7A81327528708004CFAED /* Info.plist */,
+				F1F7A81C275289E1004CFAED /* Controllers */,
+				F1F7A81B275289C4004CFAED /* Storyboards */,
+				F1F7A8212752D53E004CFAED /* Models */,
+				F1F7A81E27528A30004CFAED /* Resources */,
+				F1F7A81D27528A03004CFAED /* App */,
 			);
 			path = MessingWithTableView;
+			sourceTree = "<group>";
+		};
+		F1F7A81B275289C4004CFAED /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F1F7A80B27528707004CFAED /* Main.storyboard */,
+				F1F7A81027528708004CFAED /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F1F7A81C275289E1004CFAED /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F1F7A8192752899A004CFAED /* MainTableViewController.swift */,
+				F1F7A81F2752C606004CFAED /* CustomTableViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F1F7A81D27528A03004CFAED /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F1F7A80527528707004CFAED /* AppDelegate.swift */,
+				F1F7A80727528707004CFAED /* SceneDelegate.swift */,
+				F1F7A81327528708004CFAED /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F1F7A81E27528A30004CFAED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F1F7A80E27528708004CFAED /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F1F7A8212752D53E004CFAED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1F7A8222752D56C004CFAED /* CafeModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +185,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1F7A80627528707004CFAED /* AppDelegate.swift in Sources */,
+				F1F7A81A2752899A004CFAED /* MainTableViewController.swift in Sources */,
+				F1F7A8202752C606004CFAED /* CustomTableViewCell.swift in Sources */,
 				F1F7A80827528707004CFAED /* SceneDelegate.swift in Sources */,
+				F1F7A8232752D56C004CFAED /* CafeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +339,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RR2792TYH2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MessingWithTableView/Info.plist;
+				INFOPLIST_FILE = MessingWithTableView/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,7 +367,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RR2792TYH2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MessingWithTableView/Info.plist;
+				INFOPLIST_FILE = MessingWithTableView/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
