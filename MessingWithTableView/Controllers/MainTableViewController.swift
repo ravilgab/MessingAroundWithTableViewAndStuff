@@ -42,4 +42,6 @@ class MainTableViewController: UITableViewController {
         // cell.contentConfiguration = content
         return cell
     }
+    
+    @IBAction func cancelAction(_ segue: UIStoryboardSegue) {}
 }

@@ -15,6 +15,7 @@
 		F1F7A81A2752899A004CFAED /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7A8192752899A004CFAED /* MainTableViewController.swift */; };
 		F1F7A8202752C606004CFAED /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7A81F2752C606004CFAED /* CustomTableViewCell.swift */; };
 		F1F7A8232752D56C004CFAED /* CafeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7A8222752D56C004CFAED /* CafeModel.swift */; };
+		F1F7A8252753DA86004CFAED /* AddCafeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7A8242753DA86004CFAED /* AddCafeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F1F7A8192752899A004CFAED /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		F1F7A81F2752C606004CFAED /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		F1F7A8222752D56C004CFAED /* CafeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeModel.swift; sourceTree = "<group>"; };
+		F1F7A8242753DA86004CFAED /* AddCafeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCafeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				F1F7A8192752899A004CFAED /* MainTableViewController.swift */,
 				F1F7A81F2752C606004CFAED /* CustomTableViewCell.swift */,
+				F1F7A8242753DA86004CFAED /* AddCafeTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1F7A8252753DA86004CFAED /* AddCafeTableViewController.swift in Sources */,
 				F1F7A80627528707004CFAED /* AppDelegate.swift in Sources */,
 				F1F7A81A2752899A004CFAED /* MainTableViewController.swift in Sources */,
 				F1F7A8202752C606004CFAED /* CustomTableViewCell.swift in Sources */,
