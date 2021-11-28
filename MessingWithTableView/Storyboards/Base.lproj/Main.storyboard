@@ -14,7 +14,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="T0P-Hj-eCi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.89411764705882346" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="90" id="8HB-a8-Aup" customClass="CustomTableViewCell" customModule="MessingWithTableView" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="320" height="90"/>
@@ -27,10 +27,10 @@
                                             <rect key="frame" x="16" y="7" width="76" height="76"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kn-BN-Tu2">
-                                            <rect key="frame" x="100" y="7" width="204" height="20"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kn-BN-Tu2">
+                                            <rect key="frame" x="100" y="7" width="204" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="19"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -50,6 +50,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.89411764705882346" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <outlet property="imageOfCafe" destination="foP-pw-NY9" id="BUm-52-Zxi"/>
                                     <outlet property="locationOfCafeLabel" destination="mZW-8b-nJu" id="d4u-6E-ZKn"/>
@@ -82,7 +83,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="MSm-p7-XRd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.89411764705882346" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <inset key="separatorInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                         <sections>
                             <tableViewSection id="3JF-n4-NJM">
@@ -106,6 +107,7 @@
                                                 <constraint firstItem="Rha-mL-bYr" firstAttribute="top" secondItem="pRv-At-Fgl" secondAttribute="top" id="oJt-zZ-QFY"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.90196078431372551" green="0.89411764705882346" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="75" id="P7U-nM-Zvj">
                                         <rect key="frame" x="0.0" y="294.5" width="320" height="75"/>
@@ -144,6 +146,7 @@
                                                 <constraint firstItem="ZJM-Wg-Hqs" firstAttribute="top" secondItem="vkT-GR-sJL" secondAttribute="top" constant="8" id="rm6-Eo-J2a"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.90196078431372551" green="0.89411764705882346" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="75" id="mu2-45-hzA">
                                         <rect key="frame" x="0.0" y="369.5" width="320" height="75"/>
@@ -182,6 +185,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="3vb-K8-JRU" secondAttribute="trailing" constant="16" id="njV-yF-lhz"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.90196078431372551" green="0.89411764705882346" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="75" id="6kJ-NY-jO3">
                                         <rect key="frame" x="0.0" y="444.5" width="320" height="75"/>
@@ -220,6 +224,7 @@
                                                 <constraint firstItem="tH2-Yi-eax" firstAttribute="top" secondItem="M8d-VZ-kBf" secondAttribute="top" constant="8" id="rU4-vQ-2Ju"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.90196078431372551" green="0.89411764705882346" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -232,13 +237,21 @@
                     <navigationItem key="navigationItem" title="Новое место" id="j9S-SQ-JVx">
                         <barButtonItem key="leftBarButtonItem" title="Отмена" id="iJu-GC-eSS">
                             <connections>
-                                <segue destination="yUd-OI-x8p" kind="unwind" unwindAction="cancelAction:" id="WAb-bT-IOA"/>
+                                <action selector="cancelAction:" destination="FHn-EL-FdM" id="yqZ-7O-hox"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Сохранить" id="gzz-wj-YlI"/>
+                        <barButtonItem key="rightBarButtonItem" title="Сохранить" id="gzz-wj-YlI">
+                            <connections>
+                                <segue destination="yUd-OI-x8p" kind="unwind" unwindAction="unwindSegue:" id="Fkm-FH-tJw"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="imageOfCafe" destination="Rha-mL-bYr" id="OTG-cy-GfL"/>
+                        <outlet property="cafeImage" destination="Rha-mL-bYr" id="OTG-cy-GfL"/>
+                        <outlet property="cafeLocationTF" destination="ypZ-mz-AzB" id="XSk-eA-4ew"/>
+                        <outlet property="cafeNameTF" destination="9NB-TH-SSn" id="Qt2-Iy-XnX"/>
+                        <outlet property="cafeTypeTF" destination="6Ly-eX-A2L" id="8Vi-Jw-bLX"/>
+                        <outlet property="saveButton" destination="gzz-wj-YlI" id="0CF-9h-1ki"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CwO-Qa-vt6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -253,6 +266,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="amg-PZ-b9T">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemIndigoColor"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
                             <color key="textColor" systemColor="systemIndigoColor"/>
@@ -278,6 +292,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="woG-dN-1RJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemIndigoColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -291,9 +306,6 @@
     </scenes>
     <resources>
         <image name="Photo" width="195" height="196"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

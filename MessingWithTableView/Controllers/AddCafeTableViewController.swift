@@ -9,11 +9,22 @@ import UIKit
 
 class AddCafeTableViewController: UITableViewController {
     
-    @IBOutlet weak var imageOfCafe: UIImageView!
+    var newCafe: Cafe?
+    var imageIsChanged = false // for image placeholder
+    
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    
+    @IBOutlet weak var cafeImage: UIImageView!
+    @IBOutlet weak var cafeNameTF: UITextField!
+    @IBOutlet weak var cafeLocationTF: UITextField!
+    @IBOutlet weak var cafeTypeTF: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // making Save bar button inactive till filling cafeNameTF
+        saveButton.isEnabled = false
+        cafeNameTF.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -51,6 +62,26 @@ class AddCafeTableViewController: UITableViewController {
         }
     }
     
+    func saveNewCafe() {
+        var image: UIImage?
+        
+        if imageIsChanged {
+            image = cafeImage.image
+        } else {
+            image = UIImage(named: "imagePlaceholder")
+        }
+        
+        newCafe = Cafe(name: cafeNameTF.text!,
+                       location: cafeLocationTF.text,
+                       type: cafeTypeTF.text,
+                       image: image,
+                       cafeImage: nil)
+    }
+    
+    @IBAction func cancelAction(_ sender: Any) {
+        dismiss(animated: true )
+    }
+    
 }
 
 // MARK: - Text field delegate
@@ -62,6 +93,14 @@ extension AddCafeTableViewController: UITextFieldDelegate {
         textField.resignFirstResponder()
         
         return true
+    }
+    
+    @objc private func textFieldChanged() {
+        if cafeNameTF.text?.isEmpty == false {
+            saveButton.isEnabled = true
+        } else {
+            saveButton.isEnabled = false
+        }
     }
 }
 
@@ -79,9 +118,12 @@ extension AddCafeTableViewController: UIImagePickerControllerDelegate, UINavigat
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        imageOfCafe.image = info[.editedImage] as? UIImage
-        imageOfCafe.contentMode = .scaleAspectFill
-        imageOfCafe.clipsToBounds = true
+        cafeImage.image = info[.editedImage] as? UIImage
+        cafeImage.contentMode = .scaleAspectFill
+        cafeImage.clipsToBounds = true
+        
+        imageIsChanged = true
+        
         dismiss(animated: true, completion: nil)
     }
 }

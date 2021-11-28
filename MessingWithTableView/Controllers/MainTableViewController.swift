@@ -9,7 +9,7 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
 
-    let cafes = Cafe.getCafes()
+    var cafes = Cafe.getCafes()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,16 +32,29 @@ class MainTableViewController: UITableViewController {
         
         // var content = cell.contentConfiguration
         // let cafe = cafeNames[indexPath.row]
+        let place = cafes[indexPath.row]
         
-        cell.nameOfCafeLabel.text = cafes[indexPath.row].name
-        cell.locationOfCafeLabel.text = cafes[indexPath.row].location
-        cell.typeOfCafeLabel.text = cafes[indexPath.row].type
-        cell.imageOfCafe.image = UIImage(named: cafes[indexPath.row].image)
+        cell.nameOfCafeLabel.text = place.name
+        cell.locationOfCafeLabel.text = place.location
+        cell.typeOfCafeLabel.text = place.type
+        
+        if place.image == nil {
+            cell.imageOfCafe.image = UIImage(named: place.cafeImage!)
+        } else {
+            cell.imageOfCafe.image = place.image
+        }
+        
         cell.imageOfCafe.layer.cornerRadius = cell.imageOfCafe.frame.size.height / 2
         
         // cell.contentConfiguration = content
         return cell
     }
     
-    @IBAction func cancelAction(_ segue: UIStoryboardSegue) {}
+    @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {
+        guard let addCafeVC = segue.source as? AddCafeTableViewController else { return }
+        
+        addCafeVC.saveNewCafe()
+        cafes.append(addCafeVC.newCafe!)
+        tableView.reloadData()
+    }
 }
